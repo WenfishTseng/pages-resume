@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-style: italic; }
+
+header {
+  height: 958px;
+  background-image: url("../images/bg-header.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff; }
+  header .wrap {
+    max-width: 304px; }
+    header .wrap small {
+      font-size: 24px;
+      line-height: 32px; }
+    header .wrap h1 {
+      font-size: 80px;
+      line-height: 106px;
+      font-weight: bold;
+      margin-bottom: 32px; }
+    header .wrap p {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 40px; }
+    header .wrap ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+
+article.about {
+  padding: 56px; }
+  article.about .wrap {
+    max-width: 384px;
+    margin: 0 auto; }
+    article.about .wrap h2 {
+      font-size: 64px;
+      line-height: 84px;
+      margin-bottom: 40px;
+      text-align: center; }
+    article.about .wrap img {
+      margin-bottom: 20px; }
+    article.about .wrap .info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #000; }
+      article.about .wrap .info li {
+        font-size: 24px;
+        line-height: 42px;
+        margin-bottom: 8px;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align: center; }
+    article.about .wrap .office li {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 28px; }
+      article.about .wrap .office li .dot {
+        width: 22px;
+        height: 22px;
+        background: #891818;
+        border-radius: 50%;
+        margin-right: 16px; }
+      article.about .wrap .office li p {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 42px; }
+
+article.brand {
+  padding: 56px;
+  color: #ffffff;
+  background: #000000; }
+  article.brand .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; }
+    article.brand .wrap h2 {
+      font-size: 64px;
+      line-height: 84px;
+      margin-bottom: 12px; }
+    article.brand .wrap .slogan {
+      font-size: 24px;
+      line-height: 42px;
+      margin-bottom: 32px; }
+    article.brand .wrap p {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 68px; }
+    article.brand .wrap ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      article.brand .wrap ul li {
+        margin-bottom: 40px; }
+      article.brand .wrap ul .img-l {
+        width: 66%; }
+      article.brand .wrap ul .img-m {
+        width: 49%; }
+      article.brand .wrap ul .me-m {
+        margin-right: 2%; }
+
+article.works {
+  padding: 56px; }
+  article.works .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; }
+    article.works .wrap h2 {
+      font-size: 64px;
+      line-height: 84px;
+      margin-bottom: 16px; }
+    article.works .wrap p.slogan {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 56px; }
+    article.works .wrap ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      article.works .wrap ul li {
+        width: 32%;
+        margin-bottom: 48px; }
+        article.works .wrap ul li p {
+          font-size: 20px;
+          line-height: 42px;
+          margin-top: 16px; }
+      article.works .wrap ul .img-m {
+        width: 49%; }
+
+footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 64px; }
+  footer .wrap {
+    max-width: 1200px;
+    margin: 0 auto; }
+    footer .wrap h2 {
+      text-align: center;
+      font-size: 64px;
+      line-height: 84px; }
+    footer .wrap ul a {
+      margin-top: 16px;
+      display: block;
+      font-size: 24px;
+      line-height: 36px;
+      text-decoration: none;
+      color: #ffffff;
+      text-align: center; }
+
+/*# sourceMappingURL=all.css.map */
