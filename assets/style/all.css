@@ -140,10 +140,14 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+@font-face {
+  font-family: "Roboto";
+  src: url(Roboto);
+  font-style: italic;
+  unicode-range: U+00-024F; }
+
 body {
-  font-family: "Noto Sans TC", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-style: italic; }
+  font-family: "Roboto", sans-serif; }
 
 header {
   height: 958px;
@@ -165,7 +169,8 @@ header {
     max-width: 304px; }
     header .wrap small {
       font-size: 24px;
-      line-height: 32px; }
+      line-height: 32px;
+      font-style: italic; }
     header .wrap h1 {
       font-size: 80px;
       line-height: 106px;
@@ -174,7 +179,8 @@ header {
     header .wrap p {
       font-size: 24px;
       line-height: 36px;
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      font-style: italic; }
     header .wrap ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -192,7 +198,8 @@ article.about {
       font-size: 64px;
       line-height: 84px;
       margin-bottom: 40px;
-      text-align: center; }
+      text-align: center;
+      font-style: italic; }
     article.about .wrap img {
       margin-bottom: 20px; }
     article.about .wrap .info {
@@ -232,11 +239,13 @@ article.about {
           -ms-flex-pack: center;
               justify-content: center;
       margin-top: 28px; }
-      article.about .wrap .office li .dot {
+      article.about .wrap .office li p::before {
+        display: inline-block;
         width: 22px;
         height: 22px;
-        background: #891818;
+        content: " ";
         border-radius: 50%;
+        background: #891818;
         margin-right: 16px; }
       article.about .wrap .office li p {
         font-weight: bold;
@@ -254,11 +263,13 @@ article.brand {
     article.brand .wrap h2 {
       font-size: 64px;
       line-height: 84px;
-      margin-bottom: 12px; }
+      margin-bottom: 12px;
+      font-style: italic; }
     article.brand .wrap .slogan {
       font-size: 24px;
       line-height: 42px;
-      margin-bottom: 32px; }
+      margin-bottom: 32px;
+      font-style: italic; }
     article.brand .wrap p {
       font-size: 20px;
       line-height: 30px;
@@ -290,7 +301,8 @@ article.works {
     article.works .wrap h2 {
       font-size: 64px;
       line-height: 84px;
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      font-style: italic; }
     article.works .wrap p.slogan {
       font-size: 20px;
       line-height: 30px;
@@ -317,7 +329,8 @@ article.works {
 footer {
   background: #000000;
   color: #ffffff;
-  padding: 64px; }
+  padding: 64px;
+  font-style: italic; }
   footer .wrap {
     max-width: 1200px;
     margin: 0 auto; }
