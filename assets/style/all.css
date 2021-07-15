@@ -346,5 +346,7 @@ footer {
       text-decoration: none;
       color: #ffffff;
       text-align: center; }
+      footer .wrap ul a:hover {
+        text-decoration: underline; }
 
 /*# sourceMappingURL=all.css.map */
